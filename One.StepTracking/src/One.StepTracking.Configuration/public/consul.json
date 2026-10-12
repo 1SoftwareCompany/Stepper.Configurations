@@ -1,0 +1,12 @@
+{
+    "name": "consul",
+    "defaults": {
+        "inception:cluster:consul:address": "consul.local.com"
+    },
+    "clusters": {
+        "docker-local": {},
+        "int": {},
+        "production": {}
+    },
+    "machines": {}
+}

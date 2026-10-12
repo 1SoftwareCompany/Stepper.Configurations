@@ -1,0 +1,26 @@
+{
+    "name": "rabbitmq",
+    "defaults": {
+        "inception:transport:rabbitmq:server": "docker-local.com",
+        "inception:transport:rabbitmq:vhost": "one-steptracking",
+        "inception:transport:rabbitmq:consumer:workerscount": 10,
+        "inception:transport:publicrabbitmq": [
+            {
+                "server": "docker-local.com",
+                "vhost": "one-public",
+                "federatedexchange": {
+                    "upstreamuri": "guest:guest@localhost:5672",
+                    "vhost": "one-public",
+                    "usessl": false,
+                    "maxhops": 1
+                }
+            }
+        ]
+    },
+    "clusters": {
+        "docker-local": {},
+        "int": {},
+        "production": {}
+    },
+    "machines": {}
+}

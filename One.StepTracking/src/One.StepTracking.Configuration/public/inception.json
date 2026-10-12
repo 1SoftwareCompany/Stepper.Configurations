@@ -1,0 +1,17 @@
+{
+    "name": "inception",
+    "dynamics":[
+        "inception:tenants"
+    ],
+    "defaults": {
+        "inception:boundedcontext": "steptracking",
+        "inception:tenants": [ "one" ],
+        "inception:rpcapienabled" : true
+    },
+    "clusters": {
+        "docker-local": { },
+        "int": { },
+        "production": { }
+    },
+    "machines": {}
+}

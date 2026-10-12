@@ -1,0 +1,19 @@
+{
+    "name":"One.StepTracking.Service",
+    "references": [
+        { "jar": "inception.json" },
+        { "jar": "rabbitmq.json" },
+        { "jar": "cassandra_persistence.json" },
+        { "jar": "cassandra_projections.json" },
+        { "jar": "consul.json" },
+        { "jar": "redis.json" }
+    ],
+    "defaults": {
+        "description": "One.StepTracking.Service"
+    },
+    "clusters": {
+        "docker-local": {},
+        "int": {},
+        "production": {}
+    }
+}

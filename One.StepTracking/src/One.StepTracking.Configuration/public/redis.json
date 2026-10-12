@@ -1,0 +1,12 @@
+{
+    "name": "redis",
+    "defaults": {
+        "inception:atomicaction:redis:connectionstring": "docker-local.com:6379,defaultDatabase=1,abortConnect=False"
+    },
+    "clusters": {
+        "docker-local": {},
+        "int": {},
+        "production": {}
+    },
+    "machines": {}
+}

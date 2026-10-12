@@ -1,0 +1,16 @@
+{
+    "name": "cassandra_persistence",
+    "defaults": {
+        "inception:persistence:cassandra:connectionstring": "Contact Points=docker-local.com;Port=9042;Default Keyspace=steptracking_es_1",
+        "inception:persistence:cassandra:datacenters": [],
+        "inception:persistence:cassandra:maxrequestsperconnection": 4096,
+        "inception:persistence:cassandra:replicationstrategy": "simple",
+        "inception:persistence:cassandra:replicationfactor": "1"
+    },
+    "clusters": {
+        "docker-local": {},
+        "int": {},
+        "production": {}
+    },
+    "machines": {}
+}

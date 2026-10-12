@@ -1,0 +1,16 @@
+{
+    "name": "cassandra_projections",
+    "defaults": {
+        "inception:projections:cassandra:connectionstring": "Contact Points=docker-local.com;Port=9042;Default Keyspace=steptracking_projections",
+        "inception:projections:cassandra:replicationstrategy": "simple",
+        "inception:projections:cassandra:replicationfactor": "1",
+        "inception:projections:cassandra:loadfromnewprojectionstables": false,
+        "inception:projections:cassandra:datacenters": []
+    },
+    "clusters": {
+        "docker-local": {},
+        "int": {},
+        "production": {}
+    },
+    "machines": {}
+}
